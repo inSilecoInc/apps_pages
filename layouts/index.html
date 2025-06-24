@@ -1,0 +1,9 @@
+<div style="width: 80%; margin-left: 10%;">
+    <h1>Our Apps</h1>
+    {{ range .Site.RegularPages }}
+      <h4>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h4>
+      <hr>
+    {{ end }}
+</div>
